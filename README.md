@@ -32,6 +32,7 @@ http verb: post
 tilføjet Dropbox-API-Arg key
 body:
 {    "autorename": false,    "mode": "add",    "mute": false,    "path": "/TestMappe/testfil.txt",    "strict_conflict": false}
+
 resultat:
 {
     "name": "testfil.txt",
@@ -45,6 +46,7 @@ resultat:
     "is_downloadable": true,
     "content_hash": "c70adb602e69b47d9a343034bfcfcc23221272a2898257f66fe5f6e9da0133fa"
 }
+
 ## Øvelse 5: 
 https://api.dropboxapi.com/2/files/delete_v2
 Http verb: post
@@ -53,6 +55,7 @@ body:
 {
     "path": "/TestMappe/testfil.txt"
 }
+
 resultat:
 {
     "metadata": {
@@ -67,5 +70,60 @@ resultat:
         "size": 136,
         "is_downloadable": true,
         "content_hash": "c70adb602e69b47d9a343034bfcfcc23221272a2898257f66fe5f6e9da0133fa"
+    }
+}
+
+## Øvelse 7:
+https://api.dropboxapi.com/2/files/search_v2
+
+http verb: post
+
+body:
+{
+    "match_field_options": {
+        "include_highlights": false
+    },
+    "options": {
+        "file_status": "active",
+        "filename_only": false,
+        "max_results": 20,
+        "path": "/TestMappe"
+    },
+    "query": "testfil"
+}
+
+Resultat: 
+{
+    "has_more": false,
+    "matches": []
+}
+## Øvelse 8:
+https://api.dropboxapi.com/2/files/move_v2
+
+http verb: post
+
+body:
+{
+    "allow_ownership_transfer": false,
+    "allow_shared_folder": false,
+    "autorename": false,
+    "from_path": "/TestMappe/testfil.txt",
+    "to_path": "/TestMappe2/testfil.txt"
+}
+
+Resultat:
+{
+    "metadata": {
+        ".tag": "file",
+        "name": "testfil.txt",
+        "path_lower": "/testmappe2/testfil.txt",
+        "path_display": "/TestMappe2/testfil.txt",
+        "id": "id:pyVxVY3w32oAAAAAAAAACA",
+        "client_modified": "2023-09-06T08:57:32Z",
+        "server_modified": "2023-09-06T09:03:10Z",
+        "rev": "01604ad03406177000000010d02b111",
+        "size": 128,
+        "is_downloadable": true,
+        "content_hash": "9b7848a6e25ce0a547677824ceb0fcc8a2afcf669c6dc315ceedd8eb33b43efc"
     }
 }
