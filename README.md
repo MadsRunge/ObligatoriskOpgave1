@@ -1,7 +1,7 @@
 # obligatoriskOpgave1
-Øvelse 1: der er forbindelse til dropbox app
+## Øvelse 1: der er forbindelse til dropbox app
 
-Øvelse 2:
+## Øvelse 2:
 https://api.dropboxapi.com/2/files/create_folder_v2
 skabt en ny mappe kaldt testmappe:
 HTTP verb: post
@@ -10,7 +10,7 @@ HTTP verb: post
 }
    
 
-Øvelse 3:
+## Øvelse 3:
 https://api.dropboxapi.com/2/files/get_metadata
 HTTP verb: post
 Status 200 OK
@@ -25,7 +25,7 @@ Status 200 OK
     }
 }
 
-Øvelse 4: 
+## Øvelse 4: 
 https://content.dropboxapi.com/2/files/upload
 http verb: post
 ændret content type: application/octet-stream
@@ -45,7 +45,7 @@ resultat:
     "is_downloadable": true,
     "content_hash": "c70adb602e69b47d9a343034bfcfcc23221272a2898257f66fe5f6e9da0133fa"
 }
-Øvelse 5: 
+## Øvelse 5: 
 https://api.dropboxapi.com/2/files/delete_v2
 Http verb: post
 body:
