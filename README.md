@@ -45,10 +45,10 @@ http verb: post
 
 tilføjet Dropbox-API-Arg key
 
-body:
+### body:
 {    "autorename": false,    "mode": "add",    "mute": false,    "path": "/TestMappe/testfil.txt",    "strict_conflict": false}
 
-resultat:
+### resultat:
 {
     "name": "testfil.txt",
     "path_lower": "/testmappe/testfil.txt",
@@ -67,13 +67,13 @@ https://api.dropboxapi.com/2/files/delete_v2
 
 Http verb: post
 
-body:
+### body:
 
 {
     "path": "/TestMappe/testfil.txt"
 }
 
-resultat:
+### resultat:
 {
     "metadata": {
         ".tag": "file",
@@ -95,7 +95,7 @@ https://api.dropboxapi.com/2/files/search_v2
 
 http verb: post
 
-body:
+### body:
 {
     "match_field_options": {
         "include_highlights": false
@@ -109,7 +109,7 @@ body:
     "query": "testfil"
 }
 
-Resultat: 
+### Resultat: 
 {
     "has_more": false,
     "matches": []
@@ -120,7 +120,7 @@ https://api.dropboxapi.com/2/files/move_v2
 
 http verb: post
 
-body:
+### body:
 {
     "allow_ownership_transfer": false,
     "allow_shared_folder": false,
@@ -129,7 +129,7 @@ body:
     "to_path": "/TestMappe2/testfil.txt"
 }
 
-Resultat:
+### Resultat:
 {
     "metadata": {
         ".tag": "file",
@@ -151,7 +151,7 @@ https://api.dropboxapi.com/2/files/copy_v2
 
 http verb: post
 
-Body:
+### Body:
 {
     "allow_ownership_transfer": false,
     "allow_shared_folder": false,
@@ -160,7 +160,7 @@ Body:
     "to_path": "/TestMappe/testfil.txt"
 }
 
-Resultat:
+### Resultat:
 {
     "metadata": {
         ".tag": "file",
