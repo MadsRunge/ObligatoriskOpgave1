@@ -1,6 +1,10 @@
 # obligatoriskOpgave1
 ## Øvelse 1: 
-der er forbindelse til dropbox app
+https://api.dropboxapi.com/2/files/list_folder
+
+status 200 OK
+
+der er forbindelse til dropbox app!
 
 ## Øvelse 2:
 https://api.dropboxapi.com/2/files/create_folder_v2
