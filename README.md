@@ -141,3 +141,34 @@ Resultat:
         "content_hash": "9b7848a6e25ce0a547677824ceb0fcc8a2afcf669c6dc315ceedd8eb33b43efc"
     }
 }
+
+## Øvelse 9:
+https://api.dropboxapi.com/2/files/copy_v2
+
+http verb: post
+
+Body:
+{
+    "allow_ownership_transfer": false,
+    "allow_shared_folder": false,
+    "autorename": false,
+      "from_path": "/TestMappe2/testfil.txt",
+    "to_path": "/TestMappe/testfil.txt"
+}
+
+Resultat:
+{
+    "metadata": {
+        ".tag": "file",
+        "name": "testfil.txt",
+        "path_lower": "/testmappe/testfil.txt",
+        "path_display": "/TestMappe/testfil.txt",
+        "id": "id:pyVxVY3w32oAAAAAAAAACg",
+        "client_modified": "2023-09-06T08:57:32Z",
+        "server_modified": "2023-09-06T09:14:44Z",
+        "rev": "01604ad2c9966d5000000010d02b111",
+        "size": 128,
+        "is_downloadable": true,
+        "content_hash": "9b7848a6e25ce0a547677824ceb0fcc8a2afcf669c6dc315ceedd8eb33b43efc"
+    }
+}
