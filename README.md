@@ -1,10 +1,14 @@
 # obligatoriskOpgave1
-## Øvelse 1: der er forbindelse til dropbox app
+## Øvelse 1: 
+der er forbindelse til dropbox app
 
 ## Øvelse 2:
 https://api.dropboxapi.com/2/files/create_folder_v2
-skabt en ny mappe kaldt testmappe:
+
 HTTP verb: post
+
+skabt en ny mappe kaldt testmappe:
+
 {
     "path": "/TestMappe"
 }
@@ -12,8 +16,11 @@ HTTP verb: post
 
 ## Øvelse 3:
 https://api.dropboxapi.com/2/files/get_metadata
+
 HTTP verb: post
+
 Status 200 OK
+
 {
     "path": "/TestMappe"
 }
@@ -27,9 +34,13 @@ Status 200 OK
 
 ## Øvelse 4: 
 https://content.dropboxapi.com/2/files/upload
+
 http verb: post
+
 ændret content type: application/octet-stream
+
 tilføjet Dropbox-API-Arg key
+
 body:
 {    "autorename": false,    "mode": "add",    "mute": false,    "path": "/TestMappe/testfil.txt",    "strict_conflict": false}
 
@@ -49,7 +60,9 @@ resultat:
 
 ## Øvelse 5: 
 https://api.dropboxapi.com/2/files/delete_v2
+
 Http verb: post
+
 body:
 
 {
@@ -97,6 +110,7 @@ Resultat:
     "has_more": false,
     "matches": []
 }
+
 ## Øvelse 8:
 https://api.dropboxapi.com/2/files/move_v2
 
